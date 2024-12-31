@@ -1,0 +1,57 @@
+body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  background-color: black;
+  color: white;
+  background-image: url("img/cup_of_coffee.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  justify-content: center;
+  margin: auto;
+  padding: 20px;
+}
+header {
+  background-image: url("img/coffee_break.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+header, h1, main, section, footer {
+  padding: 20px;
+  border: 1px solid #fff;
+}
+
+h1 {
+  display: inline-block;
+}
+
+main {
+  margin: auto;
+}
+
+a {
+  display: inline-flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: brown;
+  font-weight: bold;
+  text-decoration: none;
+  font-style: italic;
+}
+
+h1, section, footer {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5));
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+a img {
+  border: 1px solid #fff;
+  border-radius: 50px 8px 50px 8px;
+}
